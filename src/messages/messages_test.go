@@ -16,7 +16,7 @@ func TestGreetTableDriven(t *testing.T) {
 		got := Greet(s.input)
 		if got != s.expect {
 			t.Errorf("Did not get exptected result for input '%v'. Expected %q, got %q",
-				s.input, got, s.expect)
+				s.input, s.expect, got)
 		}
 	}
 }
